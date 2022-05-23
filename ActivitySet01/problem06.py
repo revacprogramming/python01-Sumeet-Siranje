@@ -1,16 +1,16 @@
 # Loops & Iterators
 
-largest = None
-smallest = None
-
-while True:
-    num = input("Enter a number? ")
-
-    if num == "done":
-        break
-
-    # ...
-
-    print(num)
-
-print("Maximum", largest)
+sum=0
+count=0
+try:
+    while True:
+        num=input("enter the number")
+               
+        if num=="done":
+           break
+        sum += int(num)
+        count+=1
+    print(sum, count,sum/count )  
+except ValueError:
+    print("invalid")
+   
